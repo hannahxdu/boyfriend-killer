@@ -1,0 +1,135 @@
+<html>
+
+<style>
+html {
+    box-sizing: border-box;
+    font-family: 'Avenir';
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+h1 {
+    align-content: center;
+}
+
+body {
+    background-color: #FA7CA2;
+    padding: 1rem;
+}
+.quiz,
+.choices {
+    list-style-type: none;
+    padding: 0;
+}
+.choices li {
+    margin-bottom: 5px;
+}
+.choices label {
+    display: flex;
+    align-items: center;
+}
+.choices label,
+input[type="radio"] {
+    cursor: pointer;
+}
+input[type="radio"] {
+    margin-right: 8px;
+}
+.view-results {
+    padding: 1rem;
+    cursor: pointer;
+    font-size: inherit;
+    color: white;
+    background: teal;
+    border-radius: 8px;
+    margin-right: 5px;
+    font-family: 'Avenir';
+}
+.my-results {
+    padding: 1rem;
+    border: 1px solid white;
+}
+</style>
+
+<h1>THE BOYFRIEND KILLER</h1>
+
+<ul class="quiz">
+    <li>
+        <h4>Have you ever cheated on your partner?</h4>
+        <ul class="choices">
+            <li>
+                <label
+                    ><input type="radio" name="question0" value="Yes"/><span>Yes</span>
+                </label>
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question0" value="No"/><span>No</span>
+                </label>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <h4>Do you think they treat you right?</h4>
+        <ul class="choices">
+            <li>
+                <label
+                    ><input type="radio" name="question1" value="Yes"/><span>Yes</span></label>
+            </li>
+            <li>
+                <label
+                    ><input type="radio" name="question1" value="No" /><span>No</span
+                    ></label
+                >
+            </li>
+        </ul>
+    </li>
+    <li>
+        <h4>Do you see yourself longterm with this person?</h4>
+        <ul class="choices">
+            <li>
+                <label
+                    ><input type="radio" name="question2" value="Yes"/><span>Yes</span
+        ></label
+                >
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="question2" value="No" /><span>No</span>
+                    </label>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<button class="view-results" onclick="returnScore()">View Results</button>
+<span id="myresults" class="my-results">My results will appear here</span>
+
+<script>
+var answers = ["No", "Yes", "Yes"],
+    tot = answers.length;
+
+function getCheckedValue(radioName) {
+    var radios = document.getElementsByName(radioName);
+    for (var y = 0; y < radios.length; y++)
+        if (radios[y].checked) return radios[y].value;
+}
+function getScore() {
+    var score = 0;
+    for (var i = 0; i < tot; i++)
+        if (getCheckedValue("question" + i) === answers[i]) score += 1;
+    return score;
+}
+function returnScore() {
+    document.getElementById("myresults").innerHTML =
+        "Your score is " + getScore() + "/" + tot;
+    if (getScore() > 2) {
+        console.log("Bravo");
+    }
+}
+    
+</script>
+
+</html>
