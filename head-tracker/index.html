@@ -5,28 +5,25 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' blob:">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Tracky Mouse</title>
+	<title>Boyfriend Killer</title>
 	<script src="lib/stats.js"></script>
 	<script src="lib/no-eval.js"></script>
 	<script src="lib/clmtrackr.js"></script>
 	<!-- <script src="lib/jsfeat-min.js"></script> exported from patched clmtrackr.js -->
 	<style>
+		h2{
+			font-family: 'Avenir';
+			text-align: center;
+
+		}
+
 		body {
+			text-align: center;
+			font-family: 'Avenir';
 			background-color: #FA7CA2;
 			color: black;
 		}
-		@media (prefers-color-scheme: dark) {
-			body {
-				background-color: black;
-				color: white;
-			}
-			a:link {
-				color: aquamarine;
-			}
-			a:visited {
-				color: rgb(197, 127, 255);
-			}
-		}
+	
 	</style>
 	<link rel="stylesheet" type="text/css" href="tracky-mouse.css">
 	<link rel="icon" type="image/png" sizes="16x16" href="images/tracky-mouse-logo-16.png">
@@ -34,14 +31,10 @@
 </head>
 
 <body>
-	<h2>Tracky Mouse</h2>
+	<h2>Head Tracking Test</h2>
 	<p>
-		This is a head tracking system similar to <a href="https://eviacam.crea-si.com/">eViacam</a>,
-		using <a href="https://en.wikipedia.org/wiki/Lucas%E2%80%93Kanade_method">Lucas–Kanade optical flow</a> to track points for high accuracy,
-		and face detection for understanding of where to place tracking points.
-		It uses two different face detectors, a fast-to-load one and a slower to load but much more accurate one, which it switches to automatically when available.
+		You will now be tested on how LOYAL you are to your partner. Images of A-list celebrities and models will show up on the screen, take one look and your score will be penalized.
 	</p>
-	<p><a href="https://github.com/1j01/tracky-mouse">Open source on GitHub.</a> MIT-licensed.</p>
 	<script src="tracky-mouse.js"></script>
 	<script>
 		TrackyMouse.dependenciesRoot = ".";
