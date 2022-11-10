@@ -14,13 +14,57 @@ html {
 *:after {
     box-sizing: inherit;
 }
-h1 {
+input[type="radio"] {
+    display: none;
+}
+
+label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: rgb(222, 60, 117);
+    border: thin solid rgb(253, 194, 220);
+    border-radius: 15px;
+    margin:5px;
+    width: 180px;
+    text-align: center;
+    display: block;
+}
+
+h4{
+    text-align: center;
+}
+
+div{
+    display: inline-block;
+    text-align: center;
     align-content: center;
+    
+
+}
+
+
+input[type="radio"]:checked + label {
+    background-color: rgb(132, 16, 63);
+    cursor: default;
+    color: #E6E6E6;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    color: white;
 }
 
 body {
     background-color: #FA7CA2;
     padding: 1rem;
+    color: white;
 }
 .quiz,
 .choices {
@@ -41,6 +85,7 @@ input[type="radio"] {
 input[type="radio"] {
     margin-right: 8px;
 }
+
 .view-results {
     padding: 1rem;
     cursor: pointer;
@@ -58,58 +103,60 @@ input[type="radio"] {
 </style>
 
 <h1>THE BOYFRIEND KILLER</h1>
+<h2>Part 1: The Honesty Test</h2>
 
 <ul class="quiz">
-    <li>
+    <!-- <input id="toggle-on" name="question0" type="radio" value="Yes">
+<label for="toggle-on">YES</label>
+<input id="toggle-off" name="question0" type="radio" value="No">
+<label for="toggle-off">NO</label> -->
+        
         <h4>Have you ever cheated on your partner?</h4>
         <ul class="choices">
-            <li>
-                <label
-                    ><input type="radio" name="question0" value="Yes"/><span>Yes</span>
-                </label>
-            </li>
-            <li>
-                <label
-                    ><input type="radio" name="question0" value="No"/><span>No</span>
-                </label>
-            </li>
-        </ul>
-    </li>
-    <li>
+            <center>
+            <div>
+                <input id="toggle-on" name="question0" type="radio" value="Yes">
+                <label for="toggle-on" class="button">YES</label>
+            </div>
+            <div>
+                <input id="toggle-off" name="question0" type="radio" value="No">
+                <label for="toggle-off">NO</label>
+            </div>
+            </center>
+    </ul>
         <h4>Do you think they treat you right?</h4>
         <ul class="choices">
-            <li>
-                <label
-                    ><input type="radio" name="question1" value="Yes"/><span>Yes</span></label>
-            </li>
-            <li>
-                <label
-                    ><input type="radio" name="question1" value="No" /><span>No</span
-                    ></label
-                >
-            </li>
+            <center>
+                <div>
+                    <input id="toggle-on" name="question1" type="radio" value="Yes">
+                    <label for="toggle-on" class="button">YES</label>
+                </div>
+                <div>
+                    <input id="toggle-off" name="question1" type="radio" value="No">
+                    <label for="toggle-off">NO</label>
+                </div>
+                </center>
         </ul>
-    </li>
-    <li>
+
         <h4>Do you see yourself longterm with this person?</h4>
         <ul class="choices">
-            <li>
-                <label
-                    ><input type="radio" name="question2" value="Yes"/><span>Yes</span
-        ></label
-                >
-            </li>
-            <li>
-                <label>
-                    <input type="radio" name="question2" value="No" /><span>No</span>
-                    </label>
-            </li>
+            <center>
+                <div>
+                    <input id="toggle-on" name="question2" type="radio" value="Yes">
+                    <label for="toggle-on" class="button">YES</label>
+                </div>
+                <div>
+                    <input id="toggle-off" name="question2" type="radio" value="No">
+                    <label for="toggle-off">NO</label>
+                </div>
+                </center>
         </ul>
-    </li>
-</ul>
 
+<br>
+        <center>
 <button class="view-results" onclick="returnScore()">View Results</button>
 <span id="myresults" class="my-results">My results will appear here</span>
+</center>
 
 <script>
 var answers = ["No", "Yes", "Yes"],
