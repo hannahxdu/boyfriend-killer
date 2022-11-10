@@ -553,7 +553,7 @@ TrackyMouse.init = function (div) {
 					<input type="range" min="0" max="100" value="50" class="tracky-mouse-sensitivity-y">
 					<span class="tracky-mouse-min-label">Slow</span>
 					<span class="tracky-mouse-max-label">Fast</span>
-				</span>
+				</span> 
 			</label>
 			<!-- <label class="tracky-mouse-control-row">
 				<span class="tracky-mouse-label-text">Smoothing</span>
@@ -639,8 +639,8 @@ TrackyMouse.init = function (div) {
 	// var movementXSinceFacemeshUpdate = 0;
 	// var movementYSinceFacemeshUpdate = 0;
 	var cameraFramesSinceFacemeshUpdate = [];
-	var sensitivityX;
-	var sensitivityY;
+	var sensitivityX = 50/1000;
+	var sensitivityY = 50/1000;
 	var acceleration;
 	var face;
 	var faceScore = 0;
