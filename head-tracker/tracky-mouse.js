@@ -6,13 +6,7 @@ TrackyMouse.loadDependencies = function () {
 	TrackyMouse.dependenciesRoot = TrackyMouse.dependenciesRoot.replace(/\/+$/, "");
 	const loadScript = src => {
 		return new Promise((resolve, reject) => {
-			// This wouldn't wait for them to load
-			// for (const script of document.scripts) {
-			// 	if (script.src.includes(src)) {
-			// 		resolve();
-			// 		return;
-			// 	}
-			// }
+
 			const script = document.createElement('script');
 			script.type = 'text/javascript';
 			script.onload = resolve;
@@ -903,12 +897,9 @@ TrackyMouse.init = function (div) {
 	// 	}
 	// }
 
-	// maybe should be based on size of head in view?
 	const pruningGridSize = 5;
 	const minDistanceToAddPoint = pruningGridSize * 1.5;
 
-	// Object Oriented Programming Sucks
-	// or Optical flOw Points System
 	class OOPS {
 		constructor() {
 			this.curPyramid = new jsfeat.pyramid_t(3);

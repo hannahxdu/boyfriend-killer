@@ -155,7 +155,7 @@ const createWindow = () => {
 		minimizable: false,
 		maximizable: false,
 		closable: false,
-		fullscreenable: false, // may want this...
+		fullscreenable: false, 
 		// fullscreen: true,
 		focusable: false,
 		skipTaskbar: true,
@@ -205,9 +205,7 @@ app.on('second-instance', () => {
 	}
 });
 
-// Quit when all windows are closed, except on macOS. There, it's common
-// for applications and their menu bar to stay active until the user quits
-// explicitly with Cmd + Q.
+// Quit when all windows are closed, except on macOS
 app.on('window-all-closed', () => {
 	if (process.platform !== 'darwin') {
 		app.quit();
@@ -222,5 +220,5 @@ app.on('activate', () => {
 	}
 });
 
-// In this file you can include the rest of your app's specific main process
-// code. You can also put them in separate files and import them here.
+// This file can be used to include the rest of the specific main process code
+// Can also put them in separate files and import them here.
