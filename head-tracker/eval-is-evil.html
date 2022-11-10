@@ -69,9 +69,7 @@
 				// eval("foo=1;") -> function() { return foo=1; }
 				// eval("1;") -> function() { return 1; }
 
-				// We can't use a regex to find the last expression, because it might be inside a string.
-				// Instead, split on semicolons, and try expanding from the end until we find valid expression.
-				// I'm ignoring semicolon insertion for now, only supporting single-line eval code.
+
 				const potentialStatements = evalCode.replace(/(;|\s)+$/, "").split(";");
 				console.log(potentialStatements);
 				let fnCode = "";

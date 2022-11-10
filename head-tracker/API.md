@@ -152,8 +152,7 @@ Returns an object with the following properties:
 
 Example:
 ```javascript
-// This example is based off of how JS Paint uses the Tracky Mouse API.
-// It's simplified a bit, but includes various settings.
+
 const config = {
 	// The elements to click. Anything else is ignored.
 	targets: `
@@ -173,8 +172,6 @@ const config = {
 		(target.matches(".drawing-canvas") && current_tool.supports_drag)
 	),
 	// Instead of clicking in the center of these elements, click at any point within the element.
-	// This is useful for drag offsets, like for a window titlebar,
-	// and position-based inputs like sliders or color pickers, or a drawing canvas.
 	noCenter: (target) => (
 		target.matches(`
 			input[type="range"],
@@ -184,8 +181,6 @@ const config = {
 	),
 	// Nudge hovers near the edges of an element onto the element itself,
 	// to make it easier to click on the element.
-	// More specifically it makes it easier to click on the edge of an element,
-	// useful for a drawing canvas.
 	retarget: [
 		{ from: ".canvas-container", to: ".drawing-canvas", withinMargin: 50 },
 	],
@@ -226,14 +221,7 @@ const config = {
 			}
 		}
 	},
-	// Handle untrusted gestures specially in external code.
-	// Somewhere else, for example, you might do something like:
-	// if (window.untrusted_gesture) {
-	// 	// show download window
-	// } else {
-	// 	// show save file dialog with FS Access API
-	// }
-	// Recommended: use `event.isTrusted` instead, where possible.
+
 	beforeDispatch: () => { window.untrusted_gesture = true; },
 	afterDispatch: () => { window.untrusted_gesture = false; },
 };
