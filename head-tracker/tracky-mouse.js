@@ -189,7 +189,7 @@ const init_dwell_clicking = (config) => {
 		if (!target) {
 			return null;
 		}
-
+		// x/y coordinates
 		let hover_candidate = {
 			x: clientX,
 			y: clientY,
