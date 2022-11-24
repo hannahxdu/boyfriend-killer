@@ -19,7 +19,7 @@ label{
     justify-content: center;
     align-items: center;
     padding: 20px 20px;
-    background-color: rgb(222, 60, 117);
+    background-color: #de3c75;
     border: thin solid rgb(253, 194, 220);
     border-radius: 15px;
     margin:5px;
@@ -41,11 +41,11 @@ div{
 }
 
 
-input[type="radio"]:checked + label {
+/* input[type="radio"]:checked + label {
     background-color: rgb(132, 16, 63);
     cursor: default;
     color: #E6E6E6;
-}
+} */
 
 h1 {
     text-align: center;
@@ -111,12 +111,12 @@ input[type="radio"] {
         <ul class="choices">
             <center>
             <div>
-                <input id="toggle-on" name="question0" type="radio" value="Yes">
-                <label for="toggle-on" class="button">YES</label>
+                <input name="question0" type="radio" value="Yes"/>
+                <label  class="button">YES</label>
             </div>
             <div>
-                <input id="toggle-off" name="question0" type="radio" value="No">
-                <label for="toggle-off">NO</label>
+                <input  name="question0" type="radio" value="No"/>
+                <label >NO</label>
             </div>
             </center>
     </ul>
@@ -124,12 +124,12 @@ input[type="radio"] {
         <ul class="choices">
             <center>
                 <div>
-                    <input id="toggle-on" name="question1" type="radio" value="Yes">
-                    <label for="toggle-on" class="button">YES</label>
+                    <input name="question1" type="radio" value="Yes"/>
+                    <label  class="button">YES</label>
                 </div>
                 <div>
-                    <input id="toggle-off" name="question1" type="radio" value="No">
-                    <label for="toggle-off">NO</label>
+                    <input  name="question1" type="radio" value="No"/>
+                    <label >NO</label>
                 </div>
                 </center>
         </ul>
@@ -138,11 +138,79 @@ input[type="radio"] {
         <ul class="choices">
             <center>
                 <div>
-                    <input id="toggle-on" name="question2" type="radio" value="Yes">
+                    <input id="toggle-on" name="question2" type="radio" value="Yes"/>
                     <label for="toggle-on" class="button">YES</label>
                 </div>
                 <div>
-                    <input id="toggle-off" name="question2" type="radio" value="No">
+                    <input id="toggle-off" name="question2" type="radio" value="No"/>
+                    <label for="toggle-off">NO</label>
+                </div>
+                </center>
+        </ul>
+        <h4>Do you appreciate your time with them?</h4>
+        <ul class="choices">
+            <center>
+                <div>
+                    <input id="toggle-on" name="question3" type="radio" value="Yes"/>
+                    <label for="toggle-on" class="button">YES</label>
+                </div>
+                <div>
+                    <input id="toggle-off" name="question3" type="radio" value="No"/>
+                    <label for="toggle-off">NO</label>
+                </div>
+                </center>
+        </ul>
+        <h4>Do you find this person annoying?</h4>
+        <ul class="choices">
+            <center>
+                <div>
+                    <input id="toggle-on" name="question2" type="radio" value="Yes"/>
+                    <label for="toggle-on" class="button">YES</label>
+                </div>
+                <div>
+                    <input id="toggle-off" name="question2" type="radio" value="No"/>
+                    <label for="toggle-off">NO</label>
+                </div>
+                </center>
+        </ul>
+
+        <h4>Have you ever considered breaking up?</h4>
+        <ul class="choices">
+            <center>
+                <div>
+                    <input id="toggle-on" name="question2" type="radio" value="Yes"/>
+                    <label for="toggle-on" class="button">YES</label>
+                </div>
+                <div>
+                    <input id="toggle-off" name="question2" type="radio" value="No"/>
+                    <label for="toggle-off">NO</label>
+                </div>
+                </center>
+        </ul>
+
+        <h4>Do you miss your ex?</h4>
+        <ul class="choices">
+            <center>
+                <div>
+                    <input id="toggle-on" name="question2" type="radio" value="Yes"/>
+                    <label for="toggle-on" class="button">YES</label>
+                </div>
+                <div>
+                    <input id="toggle-off" name="question2" type="radio" value="No"/>
+                    <label for="toggle-off">NO</label>
+                </div>
+                </center>
+        </ul>
+
+        <h4>Have you ever drunk texted an ex?</h4>
+        <ul class="choices">
+            <center>
+                <div>
+                    <input id="toggle-on" name="question2" type="radio" value="Yes"/>
+                    <label for="toggle-on" class="button">YES</label>
+                </div>
+                <div>
+                    <input id="toggle-off" name="question2" type="radio" value="No"/>
                     <label for="toggle-off">NO</label>
                 </div>
                 </center>
@@ -157,7 +225,6 @@ input[type="radio"] {
 <script>
 var answers = ["No", "Yes", "Yes"],
     tot = answers.length;
-
 function getCheckedValue(radioName) {
     var radios = document.getElementsByName(radioName);
     for (var y = 0; y < radios.length; y++)
@@ -176,7 +243,6 @@ function returnScore() {
         console.log("Bravo");
     }
 }
-    
 </script>
 
 </html>
