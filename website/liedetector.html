@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>Boyfriend Killer</title>
-        <link rel="icon" type="image/png" sizes="512x512" href="images/Kiss-PNG-Image-20550.png">
+        <link rel="icon" type="image/png" sizes="512x512" href="images/Kiss-PNG-Image-20551.png">
     </head>    
 
 <style>
@@ -9,13 +9,42 @@ html {
     box-sizing: border-box;
     font-family: 'Avenir';
 }
+h4{
+    font-weight: 100;
+}
 *,
 *:before,
 *:after {
     box-sizing: inherit;
 }
+
 input[type="radio"] {
     display: none;
+}
+
+.logo{
+    width: 20%;
+    size: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2{
+    font-family: 'Avenir';
+    color: white;
+    font-size: 25px;
+    margin-top: -5px;
+    padding-bottom: 10px;
+    font-weight: 300;
+}
+
+h3{
+    font-family: 'Avenir';
+    color: white;
+    font-size: 25px;
+    margin-bottom: -6px;
+    font-weight: 200;
 }
 
 label{
@@ -23,13 +52,18 @@ label{
     justify-content: center;
     align-items: center;
     padding: 20px 20px;
-    background-color: #de3c75;
+    background-color: #dd3480;
     border: thin solid rgb(253, 194, 220);
     border-radius: 15px;
     margin:5px;
     width: 180px;
     text-align: center;
     display: block;
+}
+
+label:hover {
+	font-family: Avenir;
+	background-color: #c03272;
 }
 
 h4{
@@ -44,6 +78,22 @@ div{
 
 }
 
+a{  text-decoration: none;
+    color: white;
+}
+
+.nexttest{
+    background-color: #fab1c9;
+    width: fit-content;
+    margin: 10px;
+    margin-top: 10px;
+    border: thin solid white;
+}
+
+.nexttest:hover {
+	font-family: Avenir;
+	background-color: #c03272;
+}
 
 /* input[type="radio"]:checked + label {
     background-color: rgb(132, 16, 63);
@@ -90,10 +140,13 @@ input[type="radio"] {
     padding: 1rem;
     cursor: pointer;
     font-size: inherit;
-    color: white;
-    background: teal;
-    border-radius: 8px;
-    margin-right: 5px;
+    color: #dd3480;
+    border-radius: 15px;
+    background: white;
+    border: thin solid #dd3480;
+    padding: 20px 20px;
+    margin:5px;
+    width: 145px;
     font-family: 'Avenir';
 }
 .my-results {
@@ -102,8 +155,9 @@ input[type="radio"] {
 }
 </style>
 
-<h1>THE BOYFRIEND KILLER</h1>
-<h2>Part 1: The Honesty Test</h2>
+<h3 style="text-align:center">THE</h3>
+<img src="logo (2).jpg" class="logo">
+<h2 style="text-align:center">HONESTY TEST</h2>
 
 <ul class="quiz">
     <!-- <input id="toggle-on" name="question0" type="radio" value="Yes">
@@ -222,8 +276,12 @@ input[type="radio"] {
 
 <br>
         <center>
-<button class="view-results" onclick="returnScore()">View Results</button>
-<span id="myresults" class="my-results">My results will appear here</span>
+<button class="view-results" onclick="returnScore()" >SUBMIT</button>
+<!-- <span id="myresults" class="my-results">My results will appear here</span> -->
+</center>
+
+<center>
+<label class="nexttest"><a href="loyalty.html">CONTINUE to LOYALTY TEST</button></label>
 </center>
 
 <script>

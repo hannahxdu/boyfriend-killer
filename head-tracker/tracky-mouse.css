@@ -1,3 +1,39 @@
+h3{
+	font-family: 'Avenir';
+	color: white;
+	font-size: 25px;
+	margin-bottom: -6px;
+	font-weight: 200;
+}
+h2{
+	font-family: 'Avenir';
+	color: white;
+	font-size: 25px;
+	margin-top: -5px;
+	padding-bottom: 11px;
+	font-weight: 300;
+}
+div{
+	display: inline-block;
+    text-align: center;
+    align-content: center;
+	border-radius: 15px;
+}
+body {
+	text-align: center;
+	color: white;
+	align-content: center;
+	font-family: 'Avenir';
+	background-color: #FA7CA2;
+}
+
+.logo{
+	width: 20%;
+	size: 10px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
 .tracky-mouse-pointer {
 	z-index: 900000;
 	pointer-events: none;
@@ -43,18 +79,20 @@
 	box-shadow: 0 0 10px yellow, 0 0 3px yellow;
 }
 .tracky-mouse-ui {
-
+	color: white;
 	font-family: Avenir;
-	background-color: #F9E2E1;
+	background-color: #fab1c9;
+	border: thin solid rgb(255, 255, 255);
 	color: black;
 	padding: 10px;
-	border-radius: 5px;
+	border-radius: 15px;
 	--max-ui-width: 600px;
 	max-width: var(--max-ui-width);
 	box-sizing: border-box;
 	font-size: 15px;
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	accent-color: #F89798;
+	font-family: Avenir;
+	accent-color: #dd3480;
+
 }
 .tracky-mouse-canvas {
 	max-width: 100%;
@@ -110,16 +148,18 @@
 	justify-content: center;
 }
 .tracky-mouse-use-camera-button {
+	font-family: Avenir;
 	font-size: min(2em, 8vw);
 	color: white;
-	background-color: rgb(220, 20, 60);
+	background-color: #dd3480;
 	border: 0;
 	border-radius: 5px;
 	padding: 10px;
 	cursor: pointer;
 }
 .tracky-mouse-use-camera-button:hover {
-	background-color: rgb(230, 20, 62);
+	font-family: Avenir;
+	background-color: #c03272;
 }
 .tracky-mouse-error-message {
 	font-size: min(1.5em, 6vw);

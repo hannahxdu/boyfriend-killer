@@ -1,0 +1,148 @@
+<html>
+    <head>
+        <title>Boyfriend Killer</title>
+        <link rel="icon" type="image/png" sizes="512x512" href="images/Kiss-PNG-Image-20551.png">
+        <script src="lib/stats.js"></script> <!-- THIS ONE-->
+        <script src="lib/no-eval.js"></script>
+        <script src="/lib/clmtrackr.js"></script>
+        <link rel="/head-tracker/stylesheet" type="text/css" href="tracky-mouse.css">
+    </head>
+
+<style>
+html {
+    box-sizing: border-box;
+    font-family: 'Avenir';
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+h1 {
+    text-align: center;
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+h2{
+    font-family: 'Avenir';
+    color: white;
+    font-size: 25px;
+    margin-top: -5px;
+    padding-bottom: 5px;
+    font-weight: 300;
+}
+
+h3{
+    font-family: 'Avenir';
+    color: white;
+    font-size: 25px;
+    margin-bottom: -6px;
+    font-weight: 200;
+}
+
+h4{
+    font-family: 'Avenir';
+    color: white;
+    font-size: 35px;
+    margin-top: -3px;
+    font-weight: 300;
+}
+
+h5{
+    font-family: 'Avenir';
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.logo{
+    width: 50%;
+    size: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-color: #FA7CA2;
+    padding: 1rem;
+}
+
+a{  text-decoration: none;
+    color: white;
+}
+label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #dd3480;
+    border: thin solid rgb(253, 194, 220);
+    border-radius: 15px;
+    margin:5px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    display: block;
+
+}
+
+</style>
+
+<h3 style="text-align:center">THE</h3>
+<img src="logo (2).jpg" class="logo">
+<h2 style="text-align:center">YOUR RESULTS</h2>
+<!-- <label>
+    <a href="liedetector.html"><p>PART 1</p></a>
+</label> -->
+
+<!-- <label>
+    <a href="index.html"><p>PART 2</p></a>
+</label> -->
+<center>
+    <p>Your HONESTY TEST score: </p><label><h4 id="honesty"></h4></label>
+    </center>
+    <center>
+    <p>Your LOYALTY TEST score: </p><label><h4 id="loyalty"></h4></label>
+    </center>
+<center>
+<p>Your OVERALL score:</p><label><h4 id="results"></h4></label>
+</center>
+<center>
+<div>
+    <!-- <h5>｡ﾟﾟ･｡･ﾟﾟ｡</h5></html><br>
+    <h5>ﾟ。</h5><h5 id="message"></h5>
+    <h5>　ﾟ･｡･</h5> -->
+    <h5 id="message"></h5>
+</div>
+</center>
+
+<!-- <script src="tracky-mouse.js"></script> -->
+	<script>
+		// TrackyMouse.dependenciesRoot = ".";
+		// TrackyMouse.init();
+        var loyalty = 8 * 10;
+        var honesty = 9 * 10;
+        var results = (loyalty + honesty)/2;
+        document.getElementById("results").innerHTML = results;
+        document.getElementById("loyalty").innerHTML = loyalty;
+        document.getElementById("honesty").innerHTML = honesty;
+
+        if(results > 80){
+            document.getElementById("message").innerHTML = "You are one lucky girl, your boyfriend is LOYAL for sure.";
+        }
+        else if(results > 60){
+            document.getElementById("message").innerHTML = "Your boyfriend is alright, he could be better though...";
+        }
+        else{
+            document.getElementById("message").innerHTML = "Definitely not loyal... Maybe reconsider your ex?";
+        }
+
+
+
+	</script>
+</html>

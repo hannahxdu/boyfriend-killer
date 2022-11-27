@@ -540,7 +540,7 @@ TrackyMouse.init = function (div) {
 					<span class="tracky-mouse-min-label">Slow</span>
 					<span class="tracky-mouse-max-label">Fast</span>
 				</span>
-			</label>
+			</label> 
 			<label class="tracky-mouse-control-row">
 				<span class="tracky-mouse-label-text">Vertical Sensitivity</span>
 				<span class="tracky-mouse-labeled-slider">
@@ -565,7 +565,7 @@ TrackyMouse.init = function (div) {
 					<span class="tracky-mouse-min-label">Linear</span>
 					<span class="tracky-mouse-max-label">Smooth</span>
 				</span>
-			</label>
+			</label> 
 			<!-- <label class="tracky-mouse-control-row">
 				<span class="tracky-mouse-label-text">Easy Stop (min distance to move)</span>
 				<span class="tracky-mouse-labeled-slider">
@@ -590,8 +590,8 @@ TrackyMouse.init = function (div) {
 				<div class="tracky-mouse-error-message" role="alert" hidden></div>
 			</div>
 			<canvas class="tracky-mouse-canvas"></canvas>
-		</div>
-	`;
+		</div>`;
+		
 	if (!div) {
 		document.body.appendChild(uiContainer);
 	}

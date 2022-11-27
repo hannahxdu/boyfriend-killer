@@ -1,5 +1,10 @@
 <!DOCTYPE html>
+
 <html>
+  <head>
+        <title>Boyfriend Killer</title>
+        <link rel="icon" type="image/png" sizes="512x512" href="images/Kiss-PNG-Image-20551.png">
+    </head>   
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
@@ -7,18 +12,70 @@ body {
     font-family: 'Avenir';
   margin: 0;
   background-color: #FA7CA2;
+  color: white;
+  font-weight: 100;
+}
+
+h2{
+    font-family: 'Avenir';
+    color: white;
+    font-size: 25px;
+    margin-top: -5px;
+    padding-bottom: 11px;
+    font-weight: 300;
+}
+
+h3{
+    font-family: 'Avenir';
+    color: white;
+    font-size: 25px;
+    margin-bottom: -6px;
+    font-weight: 200;
 }
 
 * {
   box-sizing: border-box;
 }
 
+.logo{
+    width: 20%;
+    size: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 img {
   vertical-align: middle;
 }
 
+a{  text-decoration: none;
+    color: white;
+}
+
+label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #fab1c9;
+    border: thin solid white;
+    border-radius: 15px;
+    margin:10px;
+    width: 180px;
+    text-align: center;
+    margin-top: 50px;
+    display: block;
+}
+
+label:hover {
+	font-family: Avenir;
+	background-color: #c03272;
+}
+
 /* Position the image container (needed to position the left and right arrows) */
 .container {
+    margin-top: -40px;
   position: relative;
 }
 
@@ -41,7 +98,7 @@ img {
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: white;
+  color: #c03272;
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
@@ -53,7 +110,7 @@ img {
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
-  color: black;
+  color: #c03272;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -103,49 +160,88 @@ img {
 </style>
 <body>
 
-<h2 style="text-align:center">Slideshow Gallery</h2>
+<h3 style="text-align:center">THE</h3>
+<img src="logo (2).jpg" class="logo">
+<h2 style="text-align:center">LOYALTY TEST</h2>
 
 <div class="container">
   <div class="mySlides">
-    <div class="numbertext">1 / 6</div>
-    <img src="Loyalty Test Pics (3).jpg" style="width:100%">
+    <div class="numbertext">1 / 10</div>
+    <img src="Loyalty Test Pics (1).jpg" style="width:100%">
   </div>
 
   <div class="mySlides">
-    <div class="numbertext">2 / 6</div>
+    <div class="numbertext">2 / 10</div>
+    <img src="Loyalty Test Pics (2).jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 10</div>
+    <img src="Loyalty Test Pics (3).jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 10</div>
     <img src="Loyalty Test Pics (4).jpg" style="width:100%">
   </div>
 
   <div class="mySlides">
-    <div class="numbertext">3 / 6</div>
+    <div class="numbertext">5 / 10</div>
     <img src="Loyalty Test Pics (5).jpg" style="width:100%">
   </div>
     
   <div class="mySlides">
-    <div class="numbertext">4 / 6</div>
-    <img src="img_lights_wide.jpg" style="width:100%">
+    <div class="numbertext">6 / 10</div>
+    <img src="Loyalty Test Pics (6).jpg" style="width:100%">
   </div>
 
   <div class="mySlides">
-    <div class="numbertext">5 / 6</div>
-    <img src="img_nature_wide.jpg" style="width:100%">
+    <div class="numbertext">7 / 10</div>
+    <img src="Loyalty Test Pics (7).jpg" style="width:100%">
   </div>
-    
+
   <div class="mySlides">
-    <div class="numbertext">6 / 6</div>
-    <img src="Kiss-PNG-Image-20550.png" style="width:100%">
+    <div class="numbertext">8 / 10</div>
+    <img src="Loyalty Test Pics (8).jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">9 / 11</div>
+    <img src="Loyalty Test Pics (9).jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">10 / 10</div>
+    <img src="Loyalty Test Pics (10).jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext"></div>
+    <center>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    <p>You have completed the LOYALTY TEST.</p> 
+    <p>Please continue by clicking the following button.</p>
+    <br>
+    <br>
+
+  </center>
+    <!-- <img src="Loyalty Test Pics (1).png" style="width:100%"> -->
   </div>
     
   <a class="prev" onclick="plusSlides(-1)">❮</a>
   <a class="next" onclick="plusSlides(1)">❯</a>
 
-  <div class="caption-container">
+  <!-- <div class="caption-container">
     <p id="caption"></p>
-  </div>
+  </div> -->
 
-  <div class="row">
+  <!-- <div class="row">
     <div class="column">
-      <img class="demo cursor" src="Kiss-PNG-Image-20550.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+      <img class="demo cursor" src="logo.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
     </div>
     <div class="column">
       <img class="demo cursor" src="Kiss-PNG-Image-20550.png" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
@@ -163,7 +259,7 @@ img {
     <img class="demo cursor" src="Kiss-PNG-Image-20550.png" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
     </div>
   </div>
-</div>
+</div> -->
 
 <script>
 let slideIndex = 1;
@@ -195,6 +291,11 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 </script>
+
+
+<center>
+  <label class="nexttest"><a href="results.html">VIEW RESULTS</button></label>
+  </center>
     
 </body>
 </html>

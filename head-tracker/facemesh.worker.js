@@ -2,10 +2,10 @@
 importScripts('lib/tf.js');
 importScripts('lib/facemesh/facemesh.js');
 
-<<<<<<< HEAD
-=======
-// Don't use CPU backend for facemesh.
->>>>>>> 9714e41270bea142b9988a0a837e6aaf388ad251
+// <<<<<<< HEAD
+// =======
+// // Don't use CPU backend for facemesh.
+// >>>>>>> 9714e41270bea142b9988a0a837e6aaf388ad251
 tf.setBackend('webgl').then((success) => {
 	if (!success) {
 		console.log("tf.setBackend('webgl') failed");
