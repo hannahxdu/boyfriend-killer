@@ -48,6 +48,21 @@ h3{
     margin-right: auto;
 }
 
+.instructions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #dd3480;
+    border: thin solid rgb(253, 194, 220);
+    border-radius: 15px;
+    margin:5px;
+    width: 500px;
+    text-align: center;
+    display: block;
+}
+
+
 body {
     background-color: #FA7CA2;
     padding: 1rem;
@@ -55,6 +70,36 @@ body {
 
 a{  text-decoration: none;
     color: white;
+}
+.start{
+    background-color: #fab1c9;
+    width: fit-content;
+    margin: 10px;
+    margin-top: 50px;
+    border: thin solid white;
+    border-radius: 15px;
+    padding: 20px 20px;
+}
+
+h4{
+    font-family: 'Avenir';
+    color: white;
+    margin-top: -6px;
+    margin-bottom: -6px;
+    font-weight: 200;
+}
+
+h5{
+    font-family: 'Avenir';
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+
+.start:hover {
+	font-family: Avenir;
+	background-color: #c03272;
 }
 
 </style>
@@ -67,13 +112,30 @@ a{  text-decoration: none;
 		TrackyMouse.dependenciesRoot = ".";
 		TrackyMouse.init();
 	</script>
-<label>
-    <a href="liedetector.html"><p>PART 1</p></a>
+<center>
+    <h5>PART 1: HONESTY TEST</h5>
+<label class="instructions">
+    <h4>Are you true to your feelings? Let’s find out! This test will contain a series of questions in which you must answer as honest as possible. You will be hooked up to a lie detector that will be monitoring your vitals to see how truthful you really are. Every correct answer will increase you score, but every detected “lie” will deduct from it.</h4>
 </label>
+</center>
 
-<label>
-    <a href="index.html"><p>PART 2</p></a>
+<center>
+    <h5>PART 2: LOYALTY TEST</h5>
+<label class="instructions">
+    <h4>The loyalty test measures the loyalty of the user by tracking their head movements when presented with photos of other people. The head scanner will observe where the user is looking when presented with photos of A-list celebrities, Victoria Secret angels, and famous influencers. If they are caught lacking, their overall score of the loyalty test will be deducted. From this data and the overall score, our website will deduce whether the partner is loyal or not.</h4>
 </label>
+</center>
+
+<br>
+<br>
+<center>
+    <label class="start"><a href="liedetector.html">START TEST</button></label>
+</center>
+<br>
+
+<!-- <label>
+    <a href="index.html"><p>PART 2</p></a>
+</label> -->
 
 
 </html>
