@@ -125,8 +125,12 @@ label{
 	<script>
 		// TrackyMouse.dependenciesRoot = ".";
 		// TrackyMouse.init();
-        var loyalty = 8 * 10;
-        var honesty = 9 * 10;
+        //import {results1} from './liedetector.js';
+        //import {results2} from './tracky-mouse.js';
+        // var loyalty = results1 * 10;
+        //var honesty = results2 * 10;
+        var loyalty = 9 * 10;
+        var honesty = 8 * 10;
         var results = (loyalty + honesty)/2;
         document.getElementById("results").innerHTML = results;
         document.getElementById("loyalty").innerHTML = loyalty;
@@ -141,8 +145,6 @@ label{
         else{
             document.getElementById("message").innerHTML = "Definitely not loyal... Maybe reconsider your ex?";
         }
-
-
 
 	</script>
 </html>

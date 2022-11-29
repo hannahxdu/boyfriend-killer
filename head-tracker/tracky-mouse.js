@@ -1026,6 +1026,16 @@ TrackyMouse.init = function (div) {
 		}
 	}
 
+	// var results2 = 0;
+	// var i = 0;
+	// function cheat(results2){
+	// 	for(i = 0; i < 10; i++){
+	// 		if(getMovement() > [120, 0]){
+	// 			results2++;
+	// 		}
+	// 	}
+	// }
+
 	canvas.addEventListener('click', (event) => {
 		if (!mainOops) {
 			return;
@@ -1555,3 +1565,5 @@ TrackyMouse.init = function (div) {
 if (typeof module !== "undefined" && module.exports) {
 	module.exports = TrackyMouse;
 }
+
+// export {results2};

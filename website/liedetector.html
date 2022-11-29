@@ -221,11 +221,11 @@ input[type="radio"] {
         <ul class="choices">
             <center>
                 <div>
-                    <input id="toggle-on" name="question2" type="radio" value="Yes"/>
+                    <input id="toggle-on" name="question4" type="radio" value="Yes"/>
                     <label for="toggle-on" class="button">YES</label>
                 </div>
                 <div>
-                    <input id="toggle-off" name="question2" type="radio" value="No"/>
+                    <input id="toggle-off" name="question4" type="radio" value="No"/>
                     <label for="toggle-off">NO</label>
                 </div>
                 </center>
@@ -235,11 +235,11 @@ input[type="radio"] {
         <ul class="choices">
             <center>
                 <div>
-                    <input id="toggle-on" name="question2" type="radio" value="Yes"/>
+                    <input id="toggle-on" name="question5" type="radio" value="Yes"/>
                     <label for="toggle-on" class="button">YES</label>
                 </div>
                 <div>
-                    <input id="toggle-off" name="question2" type="radio" value="No"/>
+                    <input id="toggle-off" name="question5" type="radio" value="No"/>
                     <label for="toggle-off">NO</label>
                 </div>
                 </center>
@@ -249,11 +249,11 @@ input[type="radio"] {
         <ul class="choices">
             <center>
                 <div>
-                    <input id="toggle-on" name="question2" type="radio" value="Yes"/>
+                    <input id="toggle-on" name="question6" type="radio" value="Yes"/>
                     <label for="toggle-on" class="button">YES</label>
                 </div>
                 <div>
-                    <input id="toggle-off" name="question2" type="radio" value="No"/>
+                    <input id="toggle-off" name="question6" type="radio" value="No"/>
                     <label for="toggle-off">NO</label>
                 </div>
                 </center>
@@ -263,11 +263,37 @@ input[type="radio"] {
         <ul class="choices">
             <center>
                 <div>
-                    <input id="toggle-on" name="question2" type="radio" value="Yes"/>
+                    <input id="toggle-on" name="question7" type="radio" value="Yes"/>
                     <label for="toggle-on" class="button">YES</label>
                 </div>
                 <div>
-                    <input id="toggle-off" name="question2" type="radio" value="No"/>
+                    <input id="toggle-off" name="question7" type="radio" value="No"/>
+                    <label for="toggle-off">NO</label>
+                </div>
+                </center>
+        </ul>
+        <h4>Do you love them whole-heartedly?</h4>
+        <ul class="choices">
+            <center>
+                <div>
+                    <input id="toggle-on" name="question8" type="radio" value="Yes"/>
+                    <label for="toggle-on" class="button">YES</label>
+                </div>
+                <div>
+                    <input id="toggle-off" name="question8" type="radio" value="No"/>
+                    <label for="toggle-off">NO</label>
+                </div>
+                </center>
+        </ul>
+        <h4>Do you have a deep appreciation for them?</h4>
+        <ul class="choices">
+            <center>
+                <div>
+                    <input id="toggle-on" name="question9" type="radio" value="Yes"/>
+                    <label for="toggle-on" class="button">YES</label>
+                </div>
+                <div>
+                    <input id="toggle-off" name="question9" type="radio" value="No"/>
                     <label for="toggle-off">NO</label>
                 </div>
                 </center>
@@ -284,7 +310,7 @@ input[type="radio"] {
 </center>
 
 <script>
-var answers = ["No", "Yes", "Yes"],
+var answers = ["No", "Yes", "Yes", "Yes", "No", "No", "No", "No", "Yes", "Yes"],
     tot = answers.length;
 function getCheckedValue(radioName) {
     var radios = document.getElementsByName(radioName);
@@ -297,13 +323,9 @@ function getScore() {
         if (getCheckedValue("question" + i) === answers[i]) score += 1;
     return score;
 }
-function returnScore() {
-    document.getElementById("myresults").innerHTML =
-        "Your score is " + getScore() + "/" + tot;
-    if (getScore() > 2) {
-        console.log("Bravo");
-    }
-}
+
+    var results1 = getScore();
+    export {results1};
 </script>
 
 </html>
